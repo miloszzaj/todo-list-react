@@ -1,3 +1,6 @@
+import Form from "./Form";
+import Tasks from "./Tasks";
+
 const tasks = [
   { id: 1, content: "test1", isDone: false },
   { id: 2, content: "test2", isDOne: true },
@@ -11,23 +14,15 @@ function App() {
       <header className="todolist__header">Lista zadań</header>
       <section className="adding">
         <header className="adding__header">Dodaj nowe zadanie</header>
-        <form className="adding__paragraph">
-          <input
-            className="adding__input js-addingInput"
-            type="text"
-            placeholder="Co jest do zrobienia?"
-            autofocus
-          />
-          <button className="adding__button js-addButton">Dodaj zadanie</button>
-        </form>
+        <Form />
       </section>
       <section className="list">
         <header className="list__header">
           Lista zadań
-          <div className="list__buttonsWrapper js-buttonsWrapper"></div>
+          <div className="list__buttonsWrapper"></div>
         </header>
         <div className="list__paragraph">
-          <ul className="list__tasks js-list__tasks"></ul>
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />{" "}
         </div>
       </section>
     </main>
