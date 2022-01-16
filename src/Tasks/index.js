@@ -10,7 +10,7 @@ const Tasks = props => (
         }`}
       >
         <button className="ist__itemButton">
-          ${task.isDone ? "&#10003" : ""}
+          {task.isDone ? "&#10003" : ""}
         </button>
         <span
           className={`"list__item--span ${

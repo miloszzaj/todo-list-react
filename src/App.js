@@ -1,5 +1,6 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
+import Buttons from "./Buttons";
 
 const tasks = [
   { id: 1, content: "test1", isDone: false },
@@ -19,7 +20,7 @@ function App() {
       <section className="list">
         <header className="list__header">
           Lista zadań
-          <div className="list__buttonsWrapper"></div>
+          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />{" "}
         </header>
         <div className="list__paragraph">
           <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />{" "}
