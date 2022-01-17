@@ -10,16 +10,3 @@ html {
 ::before {
   box-sizing: inherit
 }
-
-.body {
-  word-break: break-word;
-  margin: 7px
-}
-
-.todolist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-}

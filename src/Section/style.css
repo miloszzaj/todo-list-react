@@ -3,6 +3,7 @@
     width: 100%;
     box-shadow: 0 0 5PX #ddd;
     margin: 5px;
+
 }
 
 .section__header {
@@ -20,16 +21,3 @@
         flex-direction: column;
     }
 }
-
-/* .section__paragraph {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-@media (max-width: 500px) {
-    .section__paragraph {
-        display: flex;
-        flex-direction: column;
-    }
-} */
