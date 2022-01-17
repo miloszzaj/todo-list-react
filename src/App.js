@@ -1,6 +1,7 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
+import Section from "./Section";
 
 const tasks = [
   { id: 1, content: "test1", isDone: false },
@@ -13,19 +14,12 @@ function App() {
   return (
     <main className="todolist">
       <header className="todolist__header">Lista zadań</header>
-      <section className="adding">
-        <header className="adding__header">Dodaj nowe zadanie</header>
-        <Form />
-      </section>
-      <section className="list">
-        <header className="list__header">
-          Lista zadań
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />{" "}
-        </header>
-        <div className="list__paragraph">
-          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />{" "}
-        </div>
-      </section>
+      <Section title="Dodaj nowe zadanie" body={<Form />} />
+      <Section
+        title="Lista zadań"
+        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks}></Tasks>}
+        headerContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+      />
     </main>
   );
 }
