@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: 'Montserrat',
     sans-serif;
+  background-color: rgb(240, 240, 240);
 }
 
 *,
@@ -11,7 +12,6 @@ html {
 }
 
 .body {
-  background-color: rgb(240, 240, 240);
   word-break: break-word;
   margin: 7px
 }
@@ -22,30 +22,4 @@ html {
   align-items: center;
   max-width: 900px;
   margin: 0 auto;
-}
-
-.todolist__header {
-  font-size: 2rem;
-  font-weight: 700;
-  align-self: flex-start;
-  padding: 20px 0;
-  margin-top: 30px;
-}
-
-@media (max-width: 900px) {
-  .todolist__header {
-    margin-left: 20px;
-  }
-
-}
-
-@media (max-width: 420px) {
-  .todolist__header {
-    text-align: center;
-    margin: 30px auto 0;
-  }
-
-  .adding__header {
-    text-align: center;
-  }
 }

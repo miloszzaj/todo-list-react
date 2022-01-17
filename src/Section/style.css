@@ -2,6 +2,7 @@
     background-color: rgb(255, 255, 255);
     width: 100%;
     box-shadow: 0 0 5PX #ddd;
+    margin: 5px;
 }
 
 .section__header {

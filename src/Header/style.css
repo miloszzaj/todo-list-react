@@ -1,0 +1,21 @@
+.todolist__header {
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: flex-start;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+    .todolist__header {
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .todolist__header {
+        text-align: center;
+        margin: 30px auto 0;
+    }
+}
