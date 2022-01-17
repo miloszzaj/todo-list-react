@@ -21,7 +21,7 @@
 
 .adding__button {
     flex-grow: 1;
-    background-color: rgb(68, 128, 0);
+    background-color: teal;
     color: white;
     border-style: none;
     margin: 10px;
