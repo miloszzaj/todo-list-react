@@ -25,5 +25,3 @@ const Tasks = props => (
 );
 
 export default Tasks;
-
-// key={props.task.id}
