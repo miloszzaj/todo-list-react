@@ -1,6 +1,8 @@
-# Todo List in React
+# To do List in React
 
 ## Demo
+
+Check out my 'to do app' made in React: https://miloszzaj.github.io/todo-list-react/
 
 ## Description
 
