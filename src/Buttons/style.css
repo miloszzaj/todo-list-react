@@ -15,8 +15,10 @@
     border: none;
     background-color: transparent;
     color: teal;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.9rem;
+    transition: color 0.5s ease;
+
 }
 
 @media (max-width: 500px) {
