@@ -1,12 +1,12 @@
 import "./style.css";
 
-const Tasks = ({ tasks, hideDoneTasks }) => (
+const Tasks = ({ tasks, hideDone }) => (
   <ul className="list__tasks">
     {tasks.map(task => (
       <li
         key={task.id}
         className={`
-        list__item ${task.isDone && hideDoneTasks ? "list__item--hidden" : ""}`}
+        list__item ${task.isDone && hideDone ? "list__item--hidden" : ""}`}
       >
         <button className="list__itemButton">{task.isDone ? "✓" : ""}</button>
         <span
