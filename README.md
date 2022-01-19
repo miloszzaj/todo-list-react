@@ -8,7 +8,14 @@ Check out my 'to do app' made in React: https://miloszzaj.github.io/todo-list-re
 
 You can add things to your list and then remove it. You also can change the status of particular thing when it is done. List of things that one wants to get done or that need to get done.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies
+
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ES6+
+- React.js
+- JavaScript
+- Webpack
+- Babel
 
 ## Available Scripts
 
