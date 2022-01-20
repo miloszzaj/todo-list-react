@@ -24,6 +24,11 @@ function App() {
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
+
+  const setAllDone = () => {
+    setTasks(tasks => tasks.map(task => ({ ...task, isDone: true })));
+  };
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -38,6 +43,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
+            setAllDone={setAllDone}
           />
         }
       />
