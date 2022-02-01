@@ -1,31 +1,4 @@
-.list__tasks {
-    margin: 10px;
-    padding-left: 0;
-}
 
-.list__item {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    border-bottom: 1px solid rgb(240, 240, 240);
-    padding: 10px;
-    line-height: 2;
-}
-
-.list__item--done {
-    text-decoration: line-through
-}
-
-.list__item--hidden {
-    display: none;
-}
-
-.list__item--span {
-    margin-right: auto;
-    margin: 10px;
-    text-align: start;
-    flex-basis: 100%;
-}
 
 .list__itemButton {
     background-color: green;

@@ -7,9 +7,11 @@ const getInitialTasks = () => {
 
 export const useTasks = () => {
 	const [tasks, setTasks] = useState(getInitialTasks);
+
 	useEffect(() => {
 		localStorage.setItem('tasks', JSON.stringify(tasks));
 	}, [tasks]);
+
 	const removeTask = id => {
 		setTasks(tasks => tasks.filter(task => task.id !== id));
 	};

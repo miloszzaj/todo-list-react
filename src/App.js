@@ -17,6 +17,7 @@ function App() {
 	};
 
 	const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } = useTasks();
+
 	return (
 		<Container>
 			<Header title='Lista zadań' />
