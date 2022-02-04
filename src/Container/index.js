@@ -1,7 +1,6 @@
-import "./style.css";
-
+import { Main } from './styled';
 const Container = props => {
-  return <main className="todolist">{props.children}</main>;
+	return <Main>{props.children}</Main>;
 };
 
 export default Container;

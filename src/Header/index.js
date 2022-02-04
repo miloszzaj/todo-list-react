@@ -1,7 +1,6 @@
-import "./style.css";
-
+import { Title } from './styled';
 const Header = ({ title }) => {
-  return <header className="todolist__header">{title}</header>;
+	return <Title>{title}</Title>;
 };
 
 export default Header;
