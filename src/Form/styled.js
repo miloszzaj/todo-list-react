@@ -5,7 +5,7 @@ export const Wrapper = styled.form`
 	justify-content: space-around;
 	margin: 10px;
 
-	@media (max-width: 500px) {
+	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
 		display: flex;
 		flex-direction: column;
 	}
@@ -15,8 +15,8 @@ export const Input = styled.input`
 	flex-grow: 14;
 	margin: 10px;
 	padding: 10px;
-	border: 1px solid rgb(240, 240, 240);
-	color: rgb(80, 80, 80);
+	border: 1px solid ${({ theme }) => theme.color.gallery};
+	color: ${({ theme }) => theme.color.gray};
 `;
 
 export const Button = styled.button`

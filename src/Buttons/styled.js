@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	@media (max-width: 500px) {
+	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
 		flex-direction: column;
 		padding-top: 20px;
 	}
@@ -20,14 +20,14 @@ export const Button = styled.button`
 	${({ disabled }) =>
 		disabled &&
 		css`
-			color: rgb(107, 107, 107);
+			color: ${({ theme }) => theme.color.doveGray};
 		`}
 
-	@media (max-width: 500px) {
+	@media (max-width:${({ theme }) => theme.breakpoint.mobile}px) {
 		margin: 10px;
 	}
 
 	&:hover {
-		color: rgb(7, 182, 182);
+		color: ${({ theme }) => theme.color.pacificBlue};
 	}
 `;

@@ -9,7 +9,7 @@ export const Main = styled.main`
 	word-break: break-word;
 	margin: 0 auto;
 
-	@media (max-width: 900px) {
+	@media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
 		margin: 0 7px;
 	}
 `;

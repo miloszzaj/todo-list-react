@@ -9,7 +9,7 @@ export const Item = styled.li`
 	display: flex;
 	align-items: center;
 	list-style-type: none;
-	border-bottom: 1px solid rgb(240, 240, 240);
+	border-bottom: 1px solid ${({ theme }) => theme.color.gallery};
 	padding: 10px;
 	line-height: 2;
 
@@ -40,16 +40,16 @@ export const Button = styled.button`
 	transition: background-color 0.5s ease;
 	align-items: center;
 	&:hover {
-		background-color: rgb(22, 207, 22);
+		background-color: ${({ theme }) => theme.color.malachite};
 	}
 
 	${({ remove }) =>
 		remove &&
 		css`
-			background-color: red;
+			background-color: ${({ theme }) => theme.color.milanoRed};
 			align-items: center;
 			&:hover {
-				background-color: rgb(255, 107, 107);
+				background-color: ${({ theme }) => theme.color.bittersweet};
 			}
 		`}
 `;
