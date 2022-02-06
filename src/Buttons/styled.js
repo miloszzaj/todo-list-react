@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 export const Button = styled.button`
 	border: none;
 	background-color: transparent;
-	color: teal;
+	color: ${({ theme }) => theme.color.teal};
 	font-size: 0.9rem;
 	transition: color 0.5s ease;
 

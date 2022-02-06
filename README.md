@@ -16,6 +16,9 @@ You can add things to your list and then remove it. You also can change the stat
 - JavaScript
 - Webpack
 - Babel
+- Custom hooks
+- Styled components
+- Local storage
 
 ## Available Scripts
 
