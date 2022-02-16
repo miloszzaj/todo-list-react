@@ -23,6 +23,7 @@ const Form = ({ addNewTask }) => {
 				type='text'
 				placeholder='Co jest do zrobienia?'
 				ref={inputRef}
+				autoFocus
 			/>
 			<Button onClick={focusInput}>Dodaj zadanie</Button>
 		</Wrapper>
