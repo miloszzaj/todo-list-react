@@ -16,7 +16,7 @@ export const Input = styled.input`
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid ${({ theme }) => theme.color.gallery};
-	color: ${({ theme }) => theme.color.gray};
+	color: ${({ theme }) => theme.color.black};
 `;
 
 export const Button = styled.button`

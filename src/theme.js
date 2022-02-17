@@ -1,5 +1,6 @@
 export const theme = {
 	color: {
+		black: '#000000',
 		gallery: '#f0f0f0',
 		doveGray: '#6b6b6b',
 		teal: '#008080    ',
