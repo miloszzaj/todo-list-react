@@ -16,7 +16,6 @@ const Form = () => {
 		event.preventDefault();
 		setNewTaskContent('');
 		const trimmedNewTaskContent = newTaskContent.trim();
-		// return trimmedNewTaskContent !== '' ? trimmedNewTaskContent : null;
 		if (trimmedNewTaskContent === '') {
 			return;
 		}
