@@ -7,33 +7,19 @@ export const useTasks = () => {
 		localStorage.setItem('tasks', JSON.stringify(tasks));
 	}, [tasks]);
 
-	const removeTask = id => {
-		setTasks(tasks => tasks.filter(task => task.id !== id));
-	};
+	// const removeTask = id => {
+	// 	setTasks(tasks => tasks.filter(task => task.id !== id));
+	// };
 
-	const toggleTaskDone = id => {
-		setTasks(task => task.map(task => (task.id === id ? { ...task, isDone: !task.isDone } : task)));
-	};
+	// const toggleTaskDone = id => {
+	// 	setTasks(task => task.map(task => (task.id === id ? { ...task, isDone: !task.isDone } : task)));
+	// };
 
 	const setAllDone = () => {
 		setTasks(tasks => tasks.map(task => ({ ...task, isDone: true })));
 	};
 
-	const addNewTask = newTaskContent => {
-		setTasks(tasks => [
-			...tasks,
-			{
-				content: newTaskContent,
-				isDone: false,
-				id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
-			},
-		]);
-	};
 	return {
-		tasks,
-		removeTask,
-		toggleTaskDone,
 		setAllDone,
-		addNewTask,
 	};
 };
