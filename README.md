@@ -23,7 +23,7 @@ You can add things to your list and then remove it. You also can change the stat
 - Local storage
 
 ## Preview
-![preview](https://github.com/miloszzaj/todo-list-react/blob/master/public/preview.gif)
+![preview](https://github.com/miloszzaj/todo-list-react/blob/master/public/preview1.gif)
 
 ## Available Scripts
 
