@@ -14,6 +14,8 @@ You can add things to your list and then remove it. You also can change the stat
 - ES6+
 - React.js
 - JavaScript
+- Redux
+- Redux Toolkit
 - Webpack
 - Babel
 - Custom hooks
