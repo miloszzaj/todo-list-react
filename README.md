@@ -22,6 +22,9 @@ You can add things to your list and then remove it. You also can change the stat
 - Styled components
 - Local storage
 
+## Preview
+![preview](https://github.com/miloszzaj/todo-list-react/blob/master/public/preview.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
