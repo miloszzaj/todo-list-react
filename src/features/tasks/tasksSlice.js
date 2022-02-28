@@ -20,6 +20,7 @@ const tasksSlice = createSlice({
 		removeTask: (state, action) => {
 			const index = state.tasks.findIndex(task => task.id === action.payload);
 			state.tasks.splice(index, 1);
+			console.log(state.tasks);
 		},
 		setAllDone: ({ tasks }) => {
 			for (const task of tasks) {
@@ -31,4 +32,5 @@ const tasksSlice = createSlice({
 
 export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
+export const selectHideDone = state => state.hideDone;
 export default tasksSlice.reducer;
