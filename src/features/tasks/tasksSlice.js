@@ -27,10 +27,12 @@ const tasksSlice = createSlice({
 				task.isDone = true;
 			}
 		},
+		fetchExampleTasks: () => {},
 	},
 });
 
-export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
+export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone, fetchExampleTasks } =
+	tasksSlice.actions;
 export const selectTasks = state => {
 	console.log(state.tasksState);
 	return state.tasksState.tasks;
