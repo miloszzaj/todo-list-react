@@ -1,4 +1,4 @@
-import { takeEvery, call, put } from 'redux-saga';
+import { takeEvery, call, put } from 'redux-saga/effects';
 import { getExampleTasks } from './getExampleTasks';
 import { fetchExampleTasks, setTasks } from './tasksSlice';
 
@@ -11,6 +11,7 @@ function* fetchExampleTasksHandler() {
 	}
 }
 
-function* watchFetchExampleTasks() {
-	yield takeEvery(fetchExampleTasks.type);
+export function* watchFetchExampleTasks() {
+	console.log('działa saga');
+	yield takeEvery(fetchExampleTasks.type, fetchExampleTasksHandler);
 }
