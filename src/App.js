@@ -1,9 +1,9 @@
-import { Link, Switch, Route, HashRouter } from 'react-router-dom';
+import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
 import Author from './features/author/Author';
 import Tasks from './features/tasks/Tasks';
 
 export default () => (
-	<HashRouter>
+	<BrowserRouter basename='/todo-list-react/'>
 		<nav>
 			<ul>
 				<li>
@@ -22,5 +22,5 @@ export default () => (
 				</Route>
 			</Switch>
 		</nav>
-	</HashRouter>
+	</BrowserRouter>
 );
