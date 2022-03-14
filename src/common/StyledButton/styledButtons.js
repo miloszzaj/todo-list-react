@@ -21,6 +21,7 @@ export const Button = styled.button`
 		disabled &&
 		css`
 			color: ${({ theme }) => theme.color.doveGray};
+			cursor: not-allowed;
 		`}
 
 	@media (max-width:${({ theme }) => theme.breakpoint.mobile}px) {

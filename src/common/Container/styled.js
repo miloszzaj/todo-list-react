@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.main`
+export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,7 +8,6 @@ export const Container = styled.main`
 	justify-content: center;
 	word-break: break-word;
 	margin: 0 auto;
-
 	@media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
 		margin: 0 7px;
 	}
