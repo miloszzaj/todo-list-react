@@ -1,12 +1,12 @@
 import Form from './Form';
 import TasksList from './TasksList';
 import TasksListButtons from './TasksListButtons';
-import GetTasksButton from '../../common/GetTasksButton/GetTasksButton';
-import Section from '../../common/Section';
-import Header from '../../common/Header';
-import Container from '../../common/Container';
+import GetTasksButton from '../../../common/GetTasksButton/GetTasksButton';
+import Section from '../../../common/Section';
+import Header from '../../../common/Header';
+import Container from '../../../common/Container';
 
-const Tasks = () => (
+const TasksPage = () => (
 	<Container>
 		<Header title='Lista zadań' />
 		<Section title='Dodaj nowe zadanie' body={<Form />} headerContent={<GetTasksButton />} />
@@ -14,4 +14,4 @@ const Tasks = () => (
 	</Container>
 );
 
-export default Tasks;
+export default TasksPage;
