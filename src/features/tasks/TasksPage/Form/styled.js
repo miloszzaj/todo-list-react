@@ -11,14 +11,6 @@ export const Wrapper = styled.form`
 	}
 `;
 
-export const Input = styled.input`
-	flex-grow: 14;
-	margin: 10px;
-	padding: 10px;
-	border: 1px solid ${({ theme }) => theme.color.gallery};
-	color: ${({ theme }) => theme.color.black};
-`;
-
 export const Button = styled.button`
 	flex-grow: 1;
 	background-color: teal;
