@@ -39,10 +39,18 @@ export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone, 
 	tasksSlice.actions;
 export const selectTasks = state => {
 	console.log(state.tasksState);
+	console.log(state.tasksState.tasks);
+
+	console.log(state);
 	return state.tasksState.tasks;
 };
 export const selectHideDone = state => state.tasksState.hideDone;
 export const selectIsEveryTaskDone = state => state.tasksState.tasks.every(({ isDone }) => isDone);
 export const selectAreTasksEmpty = state => state.tasksState.tasks.length === 0;
+
+export const getTaskById = (state, taskId) => selectTasks(state).find(({ id }) => id === taskId);
+
+export const selectTasksByQuery = (state, query) =>
+	selectTasks(state).filter(({ content }) => content.includes(query.trim));
 
 export default tasksSlice.reducer;
