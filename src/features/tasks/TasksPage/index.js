@@ -11,9 +11,8 @@ const TasksPage = () => {
 	return (
 		<Container>
 			<Header title='Lista zadań' />
-			<Section title='Dodaj nowe zadanie' body={<Search />} />
-
 			<Section title='Wyszukiwarka' body={<Form />} headerContent={<GetTasksButton />} />
+			<Section title='Dodaj nowe zadanie' body={<Search />} />
 			<Section title='Lista zadań' body={<TasksList />} headerContent={<TasksListButtons />} />
 		</Container>
 	);
