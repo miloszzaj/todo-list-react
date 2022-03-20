@@ -1,17 +1,17 @@
 import { toAuthor, toTasks } from '../../routes';
-import { StyledNavLink } from './styled';
+import { Item, List, StyledNavLink } from './styled';
 
 const Navigation = () => {
 	return (
 		<nav>
-			<ul>
-				<li>
+			<List>
+				<Item>
 					<StyledNavLink to={toTasks}>Zadania</StyledNavLink>
-				</li>
-				<li>
+				</Item>
+				<Item>
 					<StyledNavLink to={toAuthor}>O autorze</StyledNavLink>
-				</li>
-			</ul>
+				</Item>
+			</List>
 		</nav>
 	);
 };

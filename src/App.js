@@ -1,5 +1,6 @@
 import { Switch, Route, HashRouter, Redirect } from 'react-router-dom';
 import AuthorPage from './features/author/AuthorPage';
+import Navigation from './features/Navigation';
 import TaskPage from './features/tasks/TaskPage';
 import TasksPage from './features/tasks/TasksPage';
 import { toAuthor, toTask, toTasks } from './routes';
@@ -7,6 +8,7 @@ import { toAuthor, toTask, toTasks } from './routes';
 const App = () => {
 	return (
 		<HashRouter>
+			<Navigation />
 			<Switch>
 				<Route path={toTask()}>
 					<TaskPage />
