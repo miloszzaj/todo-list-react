@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.form`
 	display: flex;
 	justify-content: space-around;
-	margin: 10px;
+	margin: 0;
 
 	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
 		display: flex;
@@ -16,10 +16,14 @@ export const Button = styled.button`
 	background-color: teal;
 	color: white;
 	border-style: none;
-	margin: 10px;
-	padding: 5px;
+	margin-left: 20px;
+	padding: 10px;
 	transition: 1s;
 	&:hover {
 		transform: scale(1.15);
+	}
+	@media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 `;
