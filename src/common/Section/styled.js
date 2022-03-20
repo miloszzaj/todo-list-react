@@ -19,3 +19,7 @@ export const Header = styled.header`
 		flex-direction: column;
 	}
 `;
+
+export const Body = styled.div`
+	padding: 20px;
+`;
