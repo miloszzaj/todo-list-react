@@ -6,7 +6,8 @@ Check out my 'to do app' made in React: https://miloszzaj.github.io/todo-list-re
 
 ## Description
 
-You can add things to your list and then remove it. You also can change the status of particular thing when it is done. List of things that one wants to get done or that need to get done.
+You can add things to your list and then remove it. You also can change the status of particular thing when it is done. List of things that one wants to get done or that need to get done. Furthermore you can hide finished tasks and filter your tasks by using search input. You can click every task on the list and see more details about particular task. There is also provide Author Page, where is some info about creator of this project. 
+- Tasks you wrote are stored at local storage
 
 ## Technologies
 
@@ -16,6 +17,8 @@ You can add things to your list and then remove it. You also can change the stat
 - JavaScript
 - Redux
 - Redux Toolkit
+- Redux-Saga
+- React Router
 - Webpack
 - Babel
 - Custom hooks
