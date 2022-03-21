@@ -13,6 +13,7 @@ const AuthorPage = () => (
 					<p>
 						In the meantime, he plays guitar &#127928;, travels the world &#127757; and reads about technological news &#9881;
 					</p>
+					<p>This App is a part of the YouCode course</p>
 				</>
 			}
 		/>

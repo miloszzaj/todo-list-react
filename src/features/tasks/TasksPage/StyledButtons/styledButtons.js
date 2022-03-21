@@ -31,4 +31,7 @@ export const Button = styled.button`
 	&:hover {
 		color: ${({ theme }) => theme.color.pacificBlue};
 	}
+	&:disabled {
+		color: ${({ theme }) => theme.color.doveGray};
+	}
 `;
